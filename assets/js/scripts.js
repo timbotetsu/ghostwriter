@@ -28,14 +28,14 @@ jQuery(function($) {
     var $postIndex = $('#post-index');
 
     // Initially hide the index and show the latest post
-    $latestPost.show();
-    $postIndex.hide();
+    $postIndex.show();
+    $latestPost.hide();
 
     // Show the index if the url has "page" in it (a simple
     // way of checking if we're on a paginated page.)
     if (window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1) {
-        $latestPost.hide();
-        $postIndex.show();
+        $latestPost.show();
+        $postIndex.hide();
     }
 
     // Check if history is enabled for the browser
